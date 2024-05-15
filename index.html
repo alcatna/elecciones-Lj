@@ -1,125 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  @import url(https://fonts.googleapis.com/css?family=Roboto:900,300);
-  body {
-    background-color: #f0f0f0;
-    font-family: roboto;
-  }
-  .container {
-    width: 400px;
-    margin: 120px auto 120px;
-    background-color: #fff;
-    padding: 0 20px 20px;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
-    text-align: center;
-  }
-  .container:hover .avatar-flip img:first-child {
-    opacity: 0;
-  }
-  .container:hover .avatar-flip img:last-child {
-    opacity: 1;
-  }
-  .avatar-flip {
-    border-radius: 100px;
-    overflow: hidden;
-    height: 150px;
-    width: 150px;
-    position: relative;
-    margin: auto;
-    top: -60px;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 0 13px #f0f0f0;
-    -webkit-box-shadow: 0 0 0 13px #f0f0f0;
-    -moz-box-shadow: 0 0 0 13px #f0f0f0;
-  }
-  .avatar-flip img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 100px;
-    transition: all 0.3s ease-in-out;
-  }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:900,300);
 
-  h2 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #333;
-  }
-  h4 {
-    font-size: 13px;
-    color: #00baff;
-    letter-spacing: 1px;
-    margin-bottom: 25px
-  }
-  p {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 20px;
-    color: #666;
-  }
-</style>
+        body {
+            background-color: #f0f0f0;
+            font-family: roboto;
+        }
+
+        .container {
+            width: 400px;
+            margin: 120px auto 120px;
+            background-color: #fff;
+            padding: 0 20px 20px;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+            -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+            -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+            text-align: center;
+        }
+
+        .container:hover .avatar-flip img:first-child {
+            opacity: 0;
+        }
+
+        .container:hover .avatar-flip img:last-child {
+            opacity: 1;
+        }
+
+        .avatar-flip {
+            border-radius: 100px;
+            overflow: hidden;
+            height: 150px;
+            width: 150px;
+            position: relative;
+            margin: auto;
+            top: -60px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 0 13px #f0f0f0;
+            -webkit-box-shadow: 0 0 0 13px #f0f0f0;
+            -moz-box-shadow: 0 0 0 13px #f0f0f0;
+        }
+
+        .avatar-flip img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 100px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        h4 {
+            font-size: 13px;
+            color: #00baff;
+            letter-spacing: 1px;
+            margin-bottom: 25px
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
 <div class="about-section">
-  <h1>About Us Page</h1>
-  <p>Some text about who we are and what we do.</p>
-  <p>Resize the browser window to see that this page is responsive by the way.</p>
+    <h1>About Us Page</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
 </div>
 
 <h2 style="text-align:center">Our Team</h2>
 <div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="fotos/Barzana-E09.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <div class="avatar-flip">
-          <img src="fotos/Barzana-E09.jpg" height="150" width="150" alt="Carlos Barzana">
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <div class="avatar-flip">
+                    <img src="fotos/Barzana-E09.jpg" height="150" width="150" alt="Carlos Barzana">
+                </div>
+                <h2>Carlos Barzana</h2>
+                <h4>Consejo Administrativo y/o Comisión Fiscal</h4>
+                <p><i>Seguir la senda de lo que hecho hasta ahora por el mejoramiento del lugar en que vivo aqui en La
+                    Juana</i></p>
+            </div>
         </div>
-        <h2>Carlos Barzana</h2>
-        <h4>Postulación para Consejo Administrativo y/o Comisión Fiscal</h4>
-        <p>Seguir la senda de lo que hecho hasta ahora por el mejoramiento del lugar en que vivo aqui en La Juana</p>
-      </div>
     </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="fotos/Barzana-E09.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>mike@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <div class="avatar-flip">
+                    <img src="fotos/Barzana-E09.jpg" height="150" width="150" alt="Carlos Barzana">
+                </div>
+                <h2>Carlos Barzana</h2>
+                <h4>Consejo Administrativo y/o Comisión Fiscal</h4>
+                <p><i>Seguir la senda de lo que hecho hasta ahora por el mejoramiento del lugar en que vivo aqui en La
+                    Juana</i></p>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>john@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
 </div>
-
 </body>
 </html>
