@@ -49,3 +49,29 @@ function filterCards(filterValue) {
         }
     });
 }
+
+
+function getH2Text(card) {
+    const h2 = card.querySelector('h2');
+    return h2 ? h2.textContent.trim() : '';
+}
+
+function sortCards() {
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const sortedCards = cards.sort((a, b) => {
+        const textA = getH2Text(a);
+        const textB = getH2Text(b);
+        return textA.localeCompare(textB);
+    });
+    return sortedCards;
+}
+
+function reorderCards() {
+    const sortedCards = sortCards();
+    const row = document.querySelector('.row');
+    sortedCards.forEach(card => {
+        row.appendChild(card);
+    });
+}
+
+window.onload = reorderCards;
