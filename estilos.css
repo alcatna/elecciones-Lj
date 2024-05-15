@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900,300');
+
+body {
+    background-color: #f0f0f0;
+    font-family: roboto, sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 120px auto;
+    background-color: #fff;
+    padding: 0 20px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+    text-align: center;
+}
+
+.avatar-flip {
+    border-radius: 100px;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: auto;
+    top: -60px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 13px #f0f0f0;
+}
+
+.avatar-flip img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.container:hover .avatar-flip img:first-child {
+    opacity: 0;
+}
+
+.container:hover .avatar-flip img:last-child {
+    opacity: 1;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h4 {
+    font-size: 13px;
+    color: #0d313e;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.about-section {
+    padding: 0 50px 50px;
+    text-align: center;
+    background-color: #282e46;
+    color: #fff;
+}
+
+.about-section p {
+    color: #fff;
+}
+
+.p-about-section {
+    margin-top: 0;
+}
+
+button{
+    border: 1px solid black;
+    padding: 7px 10px;
+    background-color: #0d313e;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+button.active {
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 600px) {
+    
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
