@@ -41,7 +41,7 @@ function showAllCards() {
 // Function to filter the cards
 function filterCards(filterValue) {
     cards.forEach(card => {
-        const h4 = card.querySelector('h4').textContent.toLowerCase();
+        const h4 = card.querySelector('h3').textContent.toLowerCase();
         if (h4.includes(filterValue.toLowerCase())) {
             card.style.display = 'block';
         } else {
